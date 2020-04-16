@@ -1,11 +1,11 @@
-package zdx.love.fcd
+package zdx.love.fcd.app
 
 import android.app.Application
 import android.content.Context
 
 
-fun getContextGlobal()=APP.context
-fun getApplicationGlobal()=APP.application
+fun getContextGlobal()= APP.context
+fun getApplicationGlobal()= APP.application
 
 class APP :Application(){
     companion object{
@@ -16,7 +16,7 @@ class APP :Application(){
     }
     override fun onCreate() {
         super.onCreate()
-        application=this
-        context=applicationContext
+        application =this
+        context =applicationContext
     }
 }
